@@ -1,4 +1,20 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+
+/* Stylize links */
 a{
-  color:#000;
+  color:deepskyblue;
   text-decoration: none;
+}
+a:hover{
+  color:#EE964B;
+}
+
+/* Stylize text */
+body{
+  color:#F4D35E;
+  font-family: 'Karla', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+  background-color:#1F271B;
 }
