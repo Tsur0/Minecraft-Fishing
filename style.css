@@ -1,20 +1,137 @@
 /* Import fonts */
 @import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
 
+/* Webkit Keyframes */
+@-webkit-keyframes rainbow{
+  0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
+}
 /* Stylize links */
 a{
-  color:deepskyblue;
+  color:#00bfff;
   text-decoration: none;
 }
+
 a:hover{
   color:#EE964B;
 }
 
+/* Navigation Bar */
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #283124;
+}
+
+#link {
+  border-right: 1px solid gray;
+  float: left;
+  display: inline;
+}
+
+#link a {
+  display: block;
+  color:#F4D35E;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+}
+
+#link a:hover {
+  color: #F4D35E;
+  background-color:#3f5337;
+}
+
+#active {
+  color: #EE964B;
+}
+
+/* Fix the damn footer */
+footer {
+  font-size: 75%;
+  position: absolute;
+  right: 0;
+  bottom:0;
+  left:0;
+  width: 100%
+}
+* {
+ box-sizing: border-box;
+}
+*:before,
+*:after {
+ box-sizing: border-box;
+}
 /* Stylize text */
+em {
+  animation: rainbow 3s infinite;
+  font-style: normal;
+  text-decoration: underline;
+}
+
 body{
+  width: 100%;
   color:#F4D35E;
   font-family: 'Karla', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+h2, h3{
+  color: #fbc500;
+}
+
+p {
+  font-size: 115%;
+}
+
 html{
   background-color:#1F271B;
+}
+
+img {
+  padding:2;
+}
+
+/* Classes */
+.round {
+  border-radius: 4%;
+}
+
+.main {
+  padding-bottom: 2.5rem;
+  min-height: 100vh; /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+/* Stylize Tables */
+table, th, td {
+  border: 1px solid #F4D35E;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+caption {
+  font-style: italic;
+  text-decoration: underline;
 }

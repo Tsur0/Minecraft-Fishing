@@ -10,28 +10,27 @@
 </head>
 
 <body>
+<div class="main">
 	<div id="navigation">
 		<nav>
 			<!-- Possible <hr> ? -->
-			<table>
-				<tr>
-					<tb>
-						<a href="index.html">
-							Home |
-						</a>
-					</tb>
-					<tb>
-						<a href="basics.html">
-							Basics |
-						</a>
-					</tb>
-					<tb>
-						<a href="enchant.html">
-							<u>Enchantments</u> |
-						</a>
-					</tb>
-				</tr>
-			</table>
+			<ul class="nav">
+        <li id="link">
+          <a id="active" href="./index.html">
+            Home
+          </a>
+        </li>
+        <li id="link">
+          <a href="./basics.html">
+            Basics
+          </a>
+        </li>
+        <li id="link">
+          <a href="enchant.html">
+            Enchantments
+          </a>
+        </li>
+      </ul>
 			<hr>
 		</nav>
 	</div>
@@ -73,6 +72,70 @@
             Mending
           </li>
         </ul>
+      </p>
+      <p>
+        One of the best ways to get started with fishing, is to aquire a fishing rod with the <em>Mending</em> enchantment. The reasoning for this is that <em>Mending</em> will use experience gathered to repair the item you're holding. (In our case, when you fish you'll repair your own fishing rod.)
+        <br>
+        <br>
+        <img class="round" src="/src/enchant1.png" width="15%" height="15%" >
+      </p>
+
+      <h3>
+        Lure
+      </h3>
+      <p>
+        <em>Lure</em> is a simple yet effective enchantment. There are three levels for the enchantments.
+        <ul>
+          <li>Lure I</li>
+          <li>Lure II</li>
+          <li>Lure III</li>
+        </ul>
+        Lure as an enchantment cuts the amount of time for your hook to catch by five seconds. This stacks as the enchantment level goes higher.
+        <br>
+        <!-- Who knew you needed 2 line breaks to move stuff? -->
+        <br>
+        <table>
+          <caption>
+            Hook Time in Seconds
+          </caption>
+          <tr>
+            <th>
+              Unenchanted
+            </th>
+            <th>
+              Lure I
+            </th>
+            <th>
+              Lure II
+            </th>
+            <th>
+              Lure III
+            </th>
+          </tr>
+          <tr>
+            <td>
+              5-30
+            </td>
+            <td>
+              0-25
+            </td>
+            <td>
+              0-20
+            </td>
+            <td>
+              0-15
+            </td>
+          </tr>
+        </table>
+        <br>
+        In particular as to how this works, the amount of time until you hook onto a fish is predetermined when you cast your fishing rod. The time is chosen from 5 to 30 seconds. What Lure does is subtract 5 seconds per level from that predetermined time. Let's say that you cast your fishing rod, and your time is set to 15 seconds. With an unenchanted fishing rod, you'd have to wait the 15 seconds no matter what. If you had <em>Lure III</em> on your fishing rod, the hook would be instant.
+      </p>
 	  </div>
+    <br>
+    <footer>
+        <hr noshade>
+        Not affiliated with Mojang AB.
+    </footer>
+  </div>
   </body>
 </html>
